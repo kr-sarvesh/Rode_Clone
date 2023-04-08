@@ -607,6 +607,10 @@ video {
   z-index: -1;
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
+
 .mx-0 {
   margin-left: 0px;
   margin-right: 0px;
@@ -670,6 +674,10 @@ video {
   margin-left: 7rem;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .block {
   display: block;
 }
@@ -722,8 +730,16 @@ video {
   cursor: pointer;
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -791,6 +807,11 @@ video {
 .bg-slate-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\/images\/microphones-module-1200x300-rgb\.png\'\)\] {
@@ -988,6 +1009,21 @@ video {
   color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
+.text-\[\#fff\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-blue-600 {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+
+.text-slate-100 {
+  --tw-text-opacity: 1;
+  color: rgb(241 245 249 / var(--tw-text-opacity));
+}
+
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1000,6 +1036,10 @@ video {
 
 .hover\:outline-\[\#ad9970\]:hover {
   outline-color: #ad9970;
+}
+
+.focus\:outline:focus {
+  outline-style: solid;
 }
 
 @media (min-width: 480px) {
@@ -1019,6 +1059,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:m-5 {
+    margin: 1.25rem;
+  }
+
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1043,6 +1087,10 @@ video {
     width: 83.333333%;
   }
 
+  .md\:w-11\/12 {
+    width: 91.666667%;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -1065,12 +1113,20 @@ video {
     font-size: 4.5rem;
     line-height: 1;
   }
+
+  .md\:text-\[1\.18rem\] {
+    font-size: 1.18rem;
+  }
 }
 
 @media (min-width: 976px) {
   .lg\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+  .lg\:mb-8 {
+    margin-bottom: 2rem;
   }
 
   .lg\:block {
@@ -1093,8 +1149,16 @@ video {
     width: 100%;
   }
 
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+
   .lg\:max-w-lg {
     max-width: 32rem;
+  }
+
+  .lg\:flex-nowrap {
+    flex-wrap: nowrap;
   }
 
   .lg\:bg-\[url\(\'\/images\/rode-rodecaster-pro-II-home-page-1920x700-rgb\.jpg\'\)\] {
@@ -1144,7 +1208,17 @@ video {
     padding-bottom: 0px;
   }
 
+  .lg\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
   .lg\:pb-0 {
     padding-bottom: 0px;
+  }
+
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
